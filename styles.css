@@ -985,7 +985,7 @@ button {
 /* Footer */
 
 .site-footer {
-  background: #fff;
+  background: #ebecf0;
   color: #555;
   padding-top: 72px;
 }
@@ -1043,6 +1043,10 @@ button {
 
 .footer-bottom {
   background: var(--red);
+  color: #fff;
+}
+
+.footer-bottom .social-icon {
   color: #fff;
 }
 
