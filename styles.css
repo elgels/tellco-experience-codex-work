@@ -140,6 +140,7 @@ button {
 
 .site-header {
   position: sticky;
+  container-type: inline-size;
   top: 0;
   z-index: 50;
   background: rgba(255, 255, 255, 0.96);
@@ -153,8 +154,6 @@ button {
 }
 
 .nav-shell {
-  width: calc(100% - 40px);
-  max-width: none;
   min-height: var(--header-height);
   display: flex;
   align-items: center;
@@ -173,6 +172,13 @@ button {
   max-height: 72px;
   object-fit: contain;
 }
+
+@media (min-width: 981px) {
+  .nav-shell .brand {
+    transform: translateX(calc((100cqw - min(100cqw - 48px, var(--max))) / -2 + 20px));
+  }
+}
+
 .primary-nav {
   margin-left: auto;
   display: flex;
@@ -1079,9 +1085,12 @@ button {
     width: min(100% - 34px, var(--max));
   }
 
-  .topbar-inner,
-  .nav-shell {
+  .topbar-inner {
     width: calc(100% - 32px);
+  }
+
+  .nav-shell .brand {
+    transform: translateX(-1px);
   }
 
   .topbar-inner {
@@ -4047,9 +4056,12 @@ button {
     width: min(100% - 24px, var(--max));
   }
 
-  .topbar-inner,
-  .nav-shell {
+  .topbar-inner {
     width: calc(100% - 32px);
+  }
+
+  .nav-shell .brand {
+    transform: translateX(4px);
   }
 
   .brand-logo {
