@@ -115,7 +115,7 @@ button {
   min-height: 46px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .social-links {
@@ -134,10 +134,6 @@ button {
 .social-links a:hover {
   opacity: 0.78;
   transform: translateY(-1px);
-}
-
-.reseller-link {
-  color: #fff;
 }
 
 .site-header {
@@ -173,13 +169,6 @@ button {
   max-height: 72px;
   object-fit: contain;
 }
-@media (min-width: 781px) {
-  .topbar-inner .social-links,
-  .nav-shell .brand {
-    transform: translateX(-48px);
-  }
-}
-
 .primary-nav {
   margin-left: auto;
   display: flex;
@@ -1209,10 +1198,6 @@ button {
 @media (max-width: 680px) {
   .social-links {
     gap: 14px;
-  }
-
-  .reseller-link {
-    display: none;
   }
 
   .hero h1 {
@@ -4109,7 +4094,7 @@ button {
 }
 
 
-/* --- Revision: uploaded assets, TellCo-style topbar icons, partner login, and wider ecosystem graph --- */
+/* --- Revision: uploaded assets, TellCo-style topbar icons, and wider ecosystem graph --- */
 
 .social-icon {
   width: 20px;
@@ -4129,26 +4114,6 @@ button {
 .social-x svg {
   width: 18px;
   height: 18px;
-}
-
-.partner-login {
-  display: inline;
-  min-height: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  transition: opacity 160ms ease;
-}
-
-.partner-login:hover {
-  background: transparent;
-  color: #fff;
-  opacity: 0.78;
-  transform: none;
 }
 
 .track-layout {
@@ -4232,11 +4197,6 @@ button {
 }
 
 @media (max-width: 680px) {
-  .partner-login {
-    padding: 0;
-    font-size: 0.82rem;
-  }
-
   .topbar-inner {
     gap: 16px;
   }
