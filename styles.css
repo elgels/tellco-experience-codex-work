@@ -127,6 +127,10 @@ button {
   font-weight: 700;
 }
 
+.topbar-inner .social-links {
+  transform: translateX(24px);
+}
+
 .social-links a {
   color: #fff;
   opacity: 0.96;
@@ -1087,6 +1091,10 @@ button {
 
   .topbar-inner {
     width: calc(100% - 32px);
+  }
+
+  .topbar-inner .social-links {
+    transform: translateX(-6px);
   }
 
   .nav-shell .brand {
@@ -4058,6 +4066,10 @@ button {
 
   .topbar-inner {
     width: calc(100% - 32px);
+  }
+
+  .topbar-inner .social-links {
+    transform: translateX(-6px);
   }
 
   .nav-shell .brand {
